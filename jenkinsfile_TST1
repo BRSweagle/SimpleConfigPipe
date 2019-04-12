@@ -34,7 +34,7 @@ pipeline {
                 echo '**********'
                 echo '*** Check configuration in Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
-                //sh '$SWEAGLE_SCRIPTS_DIR/PasswordChecker.sh $SWEAGLE_MDS'
+                //sh '$SWEAGLE_SCRIPTS_DIR/DebugKeyFinder.sh $SWEAGLE_MDS'
                 sh '$SWEAGLE_SCRIPTS_DIR/checkAllConfigByMdsValidator.sh $SWEAGLE_MDS $SWEAGLE_VALIDATORS'
                 // Take config snapshot if no errors
                 sh '$SWEAGLE_SCRIPTS_DIR/storeConfigSnapshotByMds.sh $SWEAGLE_MDS'
