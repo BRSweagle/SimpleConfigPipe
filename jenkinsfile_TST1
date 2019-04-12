@@ -12,7 +12,7 @@ pipeline {
         SWEAGLE_VALIDATORS = "PasswordChecker"
         SWEAGLE_EXPORTER = "<EXPORTER USED TO RETRIEVE YOUR CONFIG>"
         SWEAGLE_EXPORTER_ARGS = "<OPTIONAL, EXPORTER ARGUMENTS IF ANY, SEPARATED BY COMMA>"
-        SWEAGLE_EXPORTER_FORMAT = "<OPTIONAL, FORMAT USED FOR DOWNLOADED CONFIG: PROPS (DEFAULT), YAML, JSON, XML>"
+        SWEAGLE_EXPORTER_FORMAT = "<OPTIONAL, FORMAT USED FOR DOWNLOADED CONFIG PROPS (DEFAULT), YAML, JSON, XML>"
         SWEAGLE_EXPORTER_OUTPUT = "<OPTIONAL, TARGET FILE TO EXPORT CONFIG DATA TO, DEFAULT OUTPUT IS SCREEN>"
     }
 
@@ -53,7 +53,7 @@ pipeline {
         stage('UpdateDeployStatus'){
             steps {
                 echo '**********'
-                echo '*** Optional: Update configuration status in Sweagle'
+                echo '*** Optional Update configuration status in Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
                 sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigAfter.sh $ENV_NAME'
             }
