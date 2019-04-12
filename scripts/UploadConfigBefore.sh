@@ -3,7 +3,7 @@ source $(dirname "$0")/sweagle.env
 
 #env=$1
 nodePathEnv="JenkinsCD"
-file="./config/Envs.json"
+file="./config/TST.json"
 
 #$sweagleScriptDir/UploadConfig.sh $nodePathUI
 $sweagleScriptDir/uploadFileToSweagle.sh $nodePathEnv $file
