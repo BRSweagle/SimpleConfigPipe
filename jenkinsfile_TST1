@@ -48,7 +48,7 @@ pipeline {
                 // this is to use external identity inside Jenkins Pipeline
               }
             }
-        }
+
 
         stage('UpdateDeployStatus'){
             steps {
@@ -58,4 +58,4 @@ pipeline {
                 sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigAfter.sh $ENV_NAME'
             }
         }
-        }
+  }
