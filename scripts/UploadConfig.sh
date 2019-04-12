@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source $(dirname "$0")/sweagle.env
 
-argFileJSON="./config/Envs.json"
+argFile="./config/Envs.json"
 # Sweagle path to store css, it is defined by each of the node names separated by ,
 nodePath=$1
 
