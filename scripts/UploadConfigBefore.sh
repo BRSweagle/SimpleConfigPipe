@@ -2,7 +2,7 @@
 source $(dirname "$0")/sweagle.env
 
 env=$1
-nodePathUI="JenkindsCD"
+nodePathUI="JenkinsCD"
 
 $sweagleScriptDir/webPortalUploadConfig.sh $nodePathUI
 $sweagleScriptDir/uploadFileToSweagle.sh $nodePathEnv ./environments/$env.properties
