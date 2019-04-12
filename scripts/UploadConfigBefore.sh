@@ -5,7 +5,7 @@ env=$1
 nodePathUI="JenkinsCD"
 
 $sweagleScriptDir/UploadConfig.sh $nodePathUI
-$sweagleScriptDir/uploadFileToSweagle.sh $nodePathEnv ./environments/$env.properties
+#$sweagleScriptDir/uploadFileToSweagle.sh $nodePathEnv ./environments/$env.properties
 
 # Upload all helm yaml configuration, if any for this environment
 if [ -d "./environments/$env/helm/nginx-ingress" ]; then
