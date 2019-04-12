@@ -54,7 +54,7 @@ pipeline {
                 echo '**********'
                 echo '*** Upload Configuration files to Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
-                sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigBefore.sh $ENV_NAME1'
+                sh '$SWEAGLE_SCRIPTS_DIR/UploadPRDConfig.sh $ENV_NAME1'
                 echo '*** Configuration sent'
             }
         }
