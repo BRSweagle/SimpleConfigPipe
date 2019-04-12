@@ -2,7 +2,8 @@ pipeline {
 
     environment {
         APP_NAME = "HelloWorld"
-        ENV_NAME = "TST1"
+        ENV_NAME = "TST"
+        ENV_NAME1 = "PRD"
         CONFIG_DIR = "./config"
         WWW_SOURCE_DIR = ""
         WWW_TARGET_DIR = ""
@@ -19,23 +20,22 @@ pipeline {
     agent any
 
     stages {
-        stage('UploadConfig') {
+        stage('UploadTestEnvConfig') {
             steps {
                 echo '**********'
                 echo '*** Upload Configuration files to Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
-                sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigBefore.sh $ENV_NAME'
+                sh '$SWEAGLE_SCRIPTS_DIR/UploadTSTConfig.sh $ENV_NAME'
                 echo '*** Configuration sent'
             }
         }
 
-        stage('CheckConfig'){
+        stage('CheckTestEnvConfig'){
             steps {
                 echo '**********'
                 echo '*** Check configuration in Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
-                //sh '$SWEAGLE_SCRIPTS_DIR/DebugKeyFinder.sh $SWEAGLE_MDS'
-                sh '$SWEAGLE_SCRIPTS_DIR/checkAllConfigByMdsValidator.sh $SWEAGLE_MDS $SWEAGLE_VALIDATORS'
+                sh '$SWEAGLE_SCRIPTS_DIR/checkStandardConfigByMds.sh $SWEAGLE_MDS $SWEAGLE_VALIDATORS'
                 // Take config snapshot if no errors
                 sh '$SWEAGLE_SCRIPTS_DIR/storeConfigSnapshotByMds.sh $SWEAGLE_MDS'
             }
@@ -48,15 +48,35 @@ pipeline {
                 // this is to use external identity inside Jenkins Pipeline
               }
             }
-
-
-        stage('UpdateDeployStatus'){
+            
+        stage('UploadPrdConfig') {
             steps {
                 echo '**********'
-                echo '*** Optional Update configuration status in Sweagle'
+                echo '*** Upload Configuration files to Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
-                sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigAfter.sh $ENV_NAME'
+                sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigBefore.sh $ENV_NAME1'
+                echo '*** Configuration sent'
             }
         }
-  }
+
+        stage('CheckPrdConfig'){
+            steps {
+                echo '**********'
+                echo '*** Check configuration in Sweagle'
+                sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
+                //sh '$SWEAGLE_SCRIPTS_DIR/DebugKeyFinder.sh $SWEAGLE_MDS'
+                sh '$SWEAGLE_SCRIPTS_DIR/checkAllConfigByMdsValidator.sh $SWEAGLE_MDS $SWEAGLE_VALIDATORS'
+                // Take config snapshot if no errors
+                sh '$SWEAGLE_SCRIPTS_DIR/storeConfigSnapshotByMds.sh $SWEAGLE_MDS'
+            }
+        }
+
+        stage('DeployPRD') {
+            steps {
+              echo '**********'
+              echo '*** Deploying to Test Environment'
+                // this is to use external identity inside Jenkins Pipeline
+              }
+            }
+        }
   }
