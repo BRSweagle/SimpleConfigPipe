@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 argCustomValidator="PasswordChecker"
-$(dirname "$0")/checkCustomConfigByMdsValidator.sh $1 $argCustomValidator
+$(dirname "$0")/checkAllConfigByMdsValidator.sh $1 $argCustomValidator
 retVal=$?
 
 if [ $retVal -ne 0 ]; then
