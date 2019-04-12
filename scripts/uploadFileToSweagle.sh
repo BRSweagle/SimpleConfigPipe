@@ -36,7 +36,7 @@ function loadDefaultSettings () {
     argOnlyParent="true"
     # don't store snapshot now to be able to validate with custom validators later
     argSnapshotCreate="false"
-    argSnapshotLevel="warn"
+    argSnapshotLevel="validOnly"
     # Possible values validOnly | warn | error
     # Automatically store the snaphot depending on validation status
     # cf. https://support.sweagle.com/t/36fkd5/2017-09-08-release
