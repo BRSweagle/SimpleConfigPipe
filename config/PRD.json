@@ -55,7 +55,7 @@
     "featureToggle.incrementalDataLoading": "true",
     "featureToggle.templateBasedLoading": "true",
     "host": "Dev-lv-2",
-    "info.loglevel": "4",
+    "info.loglevel": "1",
     "network.zone": "management",
     "settings.dynamicScaling": "false",
     "settings.envLoadBalancedEnabled": "false",
