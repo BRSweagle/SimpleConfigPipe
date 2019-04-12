@@ -58,5 +58,4 @@ pipeline {
                 sh '$SWEAGLE_SCRIPTS_DIR/UploadConfigAfter.sh $ENV_NAME'
             }
         }
-    }
-}
+        }
