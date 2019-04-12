@@ -4,7 +4,7 @@ source $(dirname "$0")/sweagle.env
 env=$1
 nodePathUI="JenkinsCD"
 
-$sweagleScriptDir/webPortalUploadConfig.sh $nodePathUI
+$sweagleScriptDir/UploadConfig.sh $nodePathUI
 $sweagleScriptDir/uploadFileToSweagle.sh $nodePathEnv ./environments/$env.properties
 
 # Upload all helm yaml configuration, if any for this environment
