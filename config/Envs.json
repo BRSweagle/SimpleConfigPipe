@@ -5,7 +5,7 @@
 			"currentDeployed": {},
 			"infra": {},
 			"appEnabled": "true",
-			"appEoL": "false",
+			"appEoL": "true",
 			"appName": "APP",
 			"data.encrypted": "@@true@@",
 			"data.level": "customer",
