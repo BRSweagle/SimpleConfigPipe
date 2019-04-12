@@ -31,4 +31,4 @@ function jsonValue() {
 
 echo -e "\n**********"
 echo "*** Transfer JSON config file to Sweagle"
-$sweagleScriptDir/uploadDirToSweagle.sh $nodePath,json $argDirJSON
+$sweagleScriptDir/uploadDirToSweagle.sh $nodePath $argDirJSON
