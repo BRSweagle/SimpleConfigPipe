@@ -71,7 +71,7 @@ loadDefaultSettings
 echo -e "\n**********"
 echo "*** Call Sweagle API to upload configuration data & store snapshot for file: $filename"
 # For debugging purpose only, use echo below
-#echo "(curl -s -X POST '$(apiUrl)' -H '$(apiToken)' -H 'Content-Type: $argContentType' --data-binary '@$argFile')"
+echo "(curl -s -X POST '$(apiUrl)' -H '$(apiToken)' -H 'Content-Type: $argContentType' --data-binary '@$argFile')"
 response=$(curl -s -X POST "$(apiUrl)" -H "$(apiToken)" -H "Content-Type: $argContentType" --data-binary "@$argFile")
 echo "Sweagle response: "$response
 if [[ $response = "{\"error\":"* ]]; then
