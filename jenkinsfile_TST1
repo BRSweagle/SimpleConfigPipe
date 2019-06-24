@@ -11,6 +11,7 @@ pipeline {
         SWEAGLE_PATH = "<PATH IN DATA MODEL WHERE YOU WANT TO PUT YOUR CONFIG DATA>"
         SWEAGLE_MDS = "Jenkins"
         SWEAGLE_VALIDATORS = "NoHTTP"
+        SWEAGLE_CUSTOM_VALIDATORS = "NoHTTP"
         SWEAGLE_EXPORTER = "<EXPORTER USED TO RETRIEVE YOUR CONFIG>"
         SWEAGLE_EXPORTER_ARGS = "<OPTIONAL, EXPORTER ARGUMENTS IF ANY, SEPARATED BY COMMA>"
         SWEAGLE_EXPORTER_FORMAT = "<OPTIONAL, FORMAT USED FOR DOWNLOADED CONFIG PROPS (DEFAULT), YAML, JSON, XML>"
@@ -36,7 +37,8 @@ pipeline {
                 echo '*** Check configuration in Sweagle'
                 sh 'chmod +x $SWEAGLE_SCRIPTS_DIR/*.sh'
                 sh '$SWEAGLE_SCRIPTS_DIR/checkStandardConfigByMds.sh $SWEAGLE_MDS $SWEAGLE_VALIDATORS'
-                // Take config snapshot if no errors
+                sh '$SWEAGLE_SCRIPTS_DIR/checkCustomConfigByMdsValidator.sh $SWEAGLE_MDS $SWEAGLE_CUSTOM_VALIDATORS'
+                // Take config snapshot if no errors 
                 sh '$SWEAGLE_SCRIPTS_DIR/storeConfigSnapshotByMds.sh $SWEAGLE_MDS'
             }
         }
