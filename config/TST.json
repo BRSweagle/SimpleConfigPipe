@@ -1,6 +1,6 @@
 {
   "TST": {
-    "appEnabled": "true",
+    "appEnabled": "@db.app@",
     "appEoL": "false",
     "appName": "APP",
     "data.encrypted": "true",
