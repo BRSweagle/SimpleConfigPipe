@@ -67,7 +67,7 @@
 		"EOL.announced": "False",
 		"WebClientDetails": {
 			"env..core.server.port": "8090",
-			"appPassword": "MyDog123!",
+			"appPassword": "MyDog123!*",
 			"env.db.port": "3306",
 			"env.db.schema": "mdm23",
 			"data.level": "customer",
