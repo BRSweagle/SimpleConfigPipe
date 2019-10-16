@@ -14,9 +14,11 @@ pipeline {
             sh '''CD /Users/boondock/Documents/GitHub/SimpleConfigPipe
 
 git pull'''
-            sh '''cd /Users/boondock/Documents/Technical/CLI/SCLI
-
-./sweagle uploadData -f /Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json -n WebApp,Client,TST -t json -a'''
+          }
+        }
+        stage('') {
+          steps {
+            SWEAGLEUpload(actionName: 'Upload', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'json', nodePath: 'WebApp,Client', description: 'DataUpload', showResults: true)
           }
         }
       }
