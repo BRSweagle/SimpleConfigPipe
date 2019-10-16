@@ -1,7 +1,7 @@
 {
 	"TST": {
 		"core": {
-			"Scriptpath": "jenkins_fil_1",
+			"Scriptpath": "jenkins_fil_2",
 			"Repo URL": "https://gitlab.com/sweagle/Fill.git",
 			"Version": "1.1",
 			"TST.host.env1": {
