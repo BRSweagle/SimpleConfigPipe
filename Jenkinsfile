@@ -33,7 +33,7 @@ pipeline {
       parallel {
         stage('Validation') {
           steps {
-            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-PRD', errMax: 1, markFailed: true, showResults: true)
+            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-TST', errMax: 1, markFailed: true, showResults: true)
           }
         }
         stage('Test Bed Execution') {
