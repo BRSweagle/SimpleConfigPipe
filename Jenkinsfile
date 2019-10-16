@@ -42,7 +42,7 @@ git pull'''
       parallel {
         stage('Validation') {
           steps {
-            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-TST', errMax: 1, showResults: true, retryInterval: 5)
+            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-TST', showResults: true, retryInterval: 5)
           }
         }
         stage('Test Bed Execution') {
