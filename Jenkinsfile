@@ -8,7 +8,6 @@ pipeline {
     }
     stage('Config') {
       steps {
-        SWEAGLEUpload(actionName: 'UploadConfig', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/config.json', format: 'json', nodePath: 'NewNode', description: 'UploadedData', showResults: true)
         sh '''#!/usr/bin/env bash
 # SWEAGLE PARAMETERS
 sweagleURL="https://testing.sweagle.com"
