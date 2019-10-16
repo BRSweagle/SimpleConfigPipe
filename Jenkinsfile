@@ -24,7 +24,7 @@ git pull'''
         }
         stage('Upload') {
           steps {
-            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'json', nodePath: 'Testing', description: 'Upload', showResults: true)
+            SWEAGLEUpload(actionName: 'UploadData', fileLocation: 'Client-TST.json', format: 'json', nodePath: 'Testing', description: 'Upload', showResults: true)
           }
         }
       }
