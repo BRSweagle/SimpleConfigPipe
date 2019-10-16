@@ -16,15 +16,9 @@ pipeline {
 git pull'''
           }
         }
-        stage('UploadConfig') {
-          steps {
-            sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
-./uploadFileToSweagle.sh WebApp,Client Client-TST.json'''
-          }
-        }
         stage('Upload') {
           steps {
-            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'JSON', nodePath: 'Testing', description: 'Upload', showResults: true, markFailed: true, tag: '1.1')
+            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'JSON', nodePath: 'WebApp,Client', description: 'UploadViaJenkins', showResults: true, markFailed: true, tag: '$(BUILD_ID)')
           }
         }
       }
