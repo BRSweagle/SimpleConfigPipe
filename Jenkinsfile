@@ -30,9 +30,10 @@ git pull'''
             SWEAGLEExport(actionName: 'GetLatestConfig', mdsName: 'Client-TST', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', exporter: 'all', format: 'json')
           }
         }
-        stage('error') {
+        stage('DataDownload') {
           steps {
             echo 'Data Downloaded'
+            timeout(time: 5)
           }
         }
       }
