@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Config') {
       steps {
-        SWEAGLEUpload(actionName: 'UploadConfig', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/config.json', format: 'json', nodePath: 'NewNode', description: 'UploadedData')
+        SWEAGLEUpload(actionName: 'UploadConfig', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/config.json', format: 'json', nodePath: 'NewNode', description: 'UploadedData', showResults: true)
       }
     }
   }
