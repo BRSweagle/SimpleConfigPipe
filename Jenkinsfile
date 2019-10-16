@@ -8,7 +8,7 @@ pipeline {
             echo 'Build Started'
           }
         }
-        stage('UploadConfig') {
+        stage('GetGit') {
           steps {
             echo 'ConfigUploaded'
             sh '''CD /Users/boondock/Documents/GitHub/SimpleConfigPipe
@@ -16,9 +16,11 @@ pipeline {
 git pull'''
           }
         }
-        stage('') {
+        stage('UploadConfig') {
           steps {
             SWEAGLEUpload(actionName: 'Upload', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'json', nodePath: 'WebApp,Client', description: 'DataUpload', showResults: true)
+            sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
+./uploadFileToSweagle.sh Testing Client-TST.json'''
           }
         }
       }
