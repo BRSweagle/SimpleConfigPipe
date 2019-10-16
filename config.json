@@ -2,7 +2,7 @@
 	"TST": {
 		"core": {
 			"TST.host.env1": {
-				"host.instance": "TestEnv1",
+				"host.instance": "TestEnv3",
 				"host.Port": "445",
 				"host.URL": "https://internal.env1:443",
 				"ip.internal": "200.223.546.787"
