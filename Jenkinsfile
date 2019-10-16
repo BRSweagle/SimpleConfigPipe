@@ -19,7 +19,7 @@ git pull'''
         stage('UploadConfig') {
           steps {
             sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
-./uploadFileToSweagle.sh Testing Client-TST.json'''
+./uploadFileToSweagle.sh WebApp,Client Client-TST.json'''
           }
         }
       }
