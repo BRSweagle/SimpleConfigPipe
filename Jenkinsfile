@@ -11,6 +11,9 @@ pipeline {
         stage('UploadConfig') {
           steps {
             echo 'ConfigUploaded'
+            sh '''cd /Users/boondock/Documents/Technical/CLI/SCLI
+
+./sweagle uploadData -f /Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json -n WebApp,Client,TST -t json -a'''
           }
         }
       }
