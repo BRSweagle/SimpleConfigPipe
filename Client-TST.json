@@ -5,13 +5,13 @@
 			"Repo URL": "https://gitlab.com/sweagle/Fill.git",
 			"Version": "1.1",
 			"TST.host.env1": {
-				"host.Port": "445",
+				"host.Port": "446",
 				"host.instance": "TestEnv2",
 				"host.URL": "https://internal.env1:443",
 				"ip.internal": "200.223.546.787"
 			},
 			"ToBe": {
-				"core": "war.3.2.7",
+				"core": "war.3.2.8",
 				"env.elasticsearch.port": "1453",
 				"env.elasticsearch.url": "",
 				"version": "3.2.7"
