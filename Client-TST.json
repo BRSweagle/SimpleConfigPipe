@@ -60,7 +60,7 @@
 		},
 		"EOL.announced": "False",
 		"WebClientDetails": {
-			"env..core.server.port": "8090",
+			"env.core.server.port": "8090",
 			"env.db.port": "3306",
 			"env.db.schema": "mdm23",
 			"appPassword": "MyDog123!",
@@ -74,6 +74,7 @@
 			"env.core.url": "https://localhost",
 			"data.region": "southamerica-west",
 			"env.active": "TRUE",
+			"DB.Name":"database1"
 			"appFirewallIP": "192.168.2.3387",
 			"env.core.enabled": "true",
 			"env.dataloader.install.path": "/opt/SWEAGLE",
@@ -87,7 +88,7 @@
 			"env.db.userpassword": "Password123",
 			"appEnabled": "true",
 			"env.core.install.path": "/opt/SWEAGLE",
-			"appDBName": "@@DB..Name@@",
+			"appDBName": "@@DB.Name@@",
 			"env.db.host": "MASDB"
 		},
 		"component.owner.team": "Scrum Boost",
