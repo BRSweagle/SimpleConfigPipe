@@ -18,7 +18,6 @@ git pull'''
         }
         stage('UploadConfig') {
           steps {
-            SWEAGLEUpload(actionName: 'Upload', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'json', nodePath: 'WebApp,Client', description: 'DataUpload', showResults: true)
             sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
 ./uploadFileToSweagle.sh Testing Client-TST.json'''
           }
