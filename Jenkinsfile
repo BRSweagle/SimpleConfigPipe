@@ -33,7 +33,7 @@ git pull'''
         stage('DataDownload') {
           steps {
             echo 'Data Downloaded'
-            timeout(time: 5)
+            sleep 5
           }
         }
       }
