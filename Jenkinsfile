@@ -22,7 +22,7 @@ pipeline {
             SWEAGLEExport(actionName: 'GetLatestConfig', mdsName: 'Client-TST', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', exporter: 'all', format: 'json')
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo 'Data Downloaded'
           }
@@ -33,7 +33,7 @@ pipeline {
       parallel {
         stage('Validation') {
           steps {
-            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-TST')
+            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-TST', errMax: 2, warnMax: 1)
           }
         }
         stage('Test Bed Execution') {
