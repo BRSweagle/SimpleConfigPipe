@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Config') {
       steps {
-        SWEAGLEUpload(actionName: 'UploadConfig', fileLocation: '/Users/boondock/.jenkins/workspace/Pipeline-SWEAGLE/config.json', format: 'json', nodePath: 'Jenkins')
+        SWEAGLEUpload(actionName: 'UploadConfig', fileLocation: '/Users/boondock/.jenkins/workspace/Pipeline-SWEAGLE/config', format: 'json', nodePath: 'Jenkins')
       }
     }
   }
