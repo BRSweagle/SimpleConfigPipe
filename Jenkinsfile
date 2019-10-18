@@ -23,16 +23,16 @@ git pull'''
         }
       }
     }
-    stage('Config') {
+    stage('Test') {
       parallel {
-        stage('Config') {
+        stage('Function Tests') {
           steps {
-            SWEAGLEExport(actionName: 'GetLatestConfig', mdsName: 'Client-TST', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', exporter: 'all', format: 'json')
+            echo 'StartFunctionalTests'
           }
         }
         stage('DataDownload') {
           steps {
-            echo 'Data Downloaded'
+            echo 'DownloadResults'
             sleep 5
           }
         }
