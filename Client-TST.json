@@ -1,1 +1,106 @@
-{"TST":{"core":{"Scriptpath":"jenkins_fil_3","Repo URL":"https://gitlab.com/sweagle/Fill.git","Version":"1.1","TST.host.env1":{"host.Port":"445","host.instance":"TestEnv2","host.URL":"https://internal.env1:443","ip.internal":"200.223.546.787"},"ToBe":{"core":"war7.2","env.elasticsearch.port":"1453","env.elasticsearch.url":"","version":"7.2"},"PRD.host.env1":{"data.encrypted":"true","DeletionPolicy":"30","internal":"N/A","Forward":"false","host.Port":"443","sensitive":"false","host.instance":"Live","host.URL":"https://prd.hosted.env2:443","ip.internal":"200.200.304.11","Engine":"retired"}},"component.name":"core4","versions":{"ConnectionDetails":{"app_pool":"sqlwebadmin_pool","site_name":"sqlwebadmin_site","port":"809833"}},"artifact.buildName":"Infinity_CoreTest","active":"true","SampleFullOptions":{"DESCRIPTION_LIST":{"DESCRIPTION":{"ADDRESS":{"PROTOCOL":"IPC","KEY":" EXTPROC1"},"ADDRESS_LIST":{"LOAD_BALANCE":"off","ADDRESS":{"null":{"SEND_BUF_SIZE":"11784","PORT":"1521","PROTOCOL":"tcp","HOST":"host1","RECV_BUF_SIZE":"11784"}},"SOURCE_ROUTE":"off","FAILOVER":"on"}},"SOURCE_ROUTE":"on"}},"EOL.announced":"False","WebClientDetails":{"env..core.server.port":"8090","appPassword":"Password123","env.db.port":"3306","env.db.schema":"mdm23","data.level":"customer","env..core.url":"https://localhost","env.core.server.port":"8090","info.loglevel":"4","appEmail":"ben.riley@google.com","data.encrypted":"yes","env.core.logging.file":"/opt/SWEAGLE/logs/sweagl_core.log","env.db.username":"prd_user","env.core.url":"https://localhost","data.region":"southamerica-west","env.active":"TRUE","appFirewallIP":"200.10.2.42222","env.core.enabled":"true","env.dataloader.install.path":"/opt/SWEAGLE","localMail":"","appEoL":"no","appName":"WebPortal2","appPort":"8080","newport":"93764","appUsername":"testuser","env.core.tracking.file":"/opt/SWEAGLE/logs/sweagl_core.log","env.db.userpassword":"Password123","DB.Name":"database1","appEnabled":"yes","appDBName":"database1","env.core.install.path":"/opt/SWEAGLE","env.db.host":"MASDB"},"component.owner.team":"Scrum Boost","EOL.date":""}}
+{
+  "TST": {
+    "core": {
+      "Scriptpath": "jenkins_fil_3",
+      "Repo URL": "https://gitlab.com/sweagle/Fill.git",
+      "Version": "1.2",
+      "TST.host.env1": {
+        "host.Port": "446",
+        "host.instance": "TestEnv5",
+        "host.URL": "https://internal.env1:447",
+        "ip.internal": "200.223.546.787"
+      },
+      "ToBe": {
+        "core": "war7.2",
+        "env.elasticsearch.port": "1453",
+        "env.elasticsearch.url": "",
+        "version": "7.2"
+      },
+      "PRD.host.env1": {
+        "data.encrypted": "true",
+        "DeletionPolicy": "30",
+        "internal": "N/A",
+        "Forward": "false",
+        "host.Port": "443",
+        "sensitive": "false",
+        "token": "f3iuno123578yfbsuyalse",
+        "host.instance": "PRD",
+        "host.URL": "https://prd.hosted.env2:443",
+        "ip.internal": "200.200.304.11",
+        "Engine": "retired"
+      }
+    },
+    "component.name": "core4",
+    "versions": {
+      "ConnectionDetails": {
+        "app_pool": "sqlwebadmin_pool",
+        "site_name": "sqlwebadmin_site",
+        "port": "809833"
+      }
+    },
+    "artifact.buildName": "Infinity_CoreTest",
+    "active": "true",
+    "SampleFullOptions": {
+      "DESCRIPTION_LIST": {
+        "DESCRIPTION": {
+          "ADDRESS": {
+            "PROTOCOL": "IPC",
+            "KEY": " EXTPROC1"
+          },
+          "ADDRESS_LIST": {
+            "LOAD_BALANCE": "off",
+            "ADDRESS": {
+              "null": {
+                "SEND_BUF_SIZE": "11784",
+                "PORT": "1521",
+                "PROTOCOL": "tcp",
+                "HOST": "host2",
+                "RECV_BUF_SIZE": "11784"
+              }
+            },
+            "SOURCE_ROUTE": "off",
+            "FAILOVER": "on"
+          }
+        },
+        "SOURCE_ROUTE": "on"
+      }
+    },
+    "EOL.announced": "False",
+    "WebClientDetails": {
+      "env.core.server.port": "8090",
+      "appPassword": "Password123",
+      "appToken": "ihfs^%Rbfmo",
+      "appURL": "HTTP://localmail.sweagle.com",
+      "env.db.port": "3306",
+      "env.db.schema": "mdm23",
+      "data.level": "customer",
+      "env..core.url": "https://localhost",
+      "info.loglevel": "4",
+      "appEmail": "ben.riley@google.com",
+      "data.encrypted": "yes",
+      "env.core.logging.file": "/opt/SWEAGLE/logs/sweagl_core.log",
+      "env.db.username": "prd_user",
+      "env.core.url": "https://localhost",
+      "data.region": "southamerica-west",
+      "env.active": "TRUE",
+      "appFirewallIP": "200.10.2.42222",
+      "env.core.enabled": "true",
+      "env.dataloader.install.path": "/opt/SWEAGLE",
+      "localMail": "",
+      "appEoL": "no",
+      "appName": "WebPortal2",
+      "appPort": "8080",
+      "newport": "93764",
+      "appUsername": "Admin",
+      "env.core.tracking.file": "/opt/SWEAGLE/logs/sweagl_core.log",
+      "env.db.userpassword": "Password123",
+      "DB.Name": "database1",
+      "appEnabled": "yes",
+      "appDBName": "database1",
+      "env.core.install.path": "/opt/SWEAGLE",
+      "env.db.host": "MASDB"
+    },
+    "component.owner.team": "Scrum Boost",
+    "EOL.date": ""
+  }
+}
