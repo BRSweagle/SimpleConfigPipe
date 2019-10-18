@@ -1,109 +1,107 @@
 {
-  "Client": {
-    "TST": {
-      "core": {
-        "PRD.host.env1": {
-          "data.encrypted": "true",
-          "DeletionPolicy": "30",
-          "Engine": "retired",
-          "Forward": "false",
-          "host.instance": "Live",
-          "host.Port": "443",
-          "host.URL": "https://prd.hosted.env2:443",
-          "internal": "N/A",
-          "ip.internal": "200.200.304.11",
-          "sensitive": "false",
-          "token": "f3iuno123578yfbsuyalse"
-        },
-        "ToBe": {
-          "core": "war7.2",
-          "env.elasticsearch.port": "1453",
-          "env.elasticsearch.url": "",
-          "version": "7.2"
-        },
-        "TST.host.env1": {
-          "host.instance": "TestEnv2",
-          "host.Port": "445",
-          "host.URL": "https://internal.env1:443",
-          "ip.internal": "200.223.546.787"
-        },
-        "Repo URL": "https://gitlab.com/sweagle/Fill.git",
-        "Scriptpath": "jenkins_fil_3",
-        "Version": "1.1"
+  "TST": {
+    "core": {
+      "PRD.host.env1": {
+        "data.encrypted": "true",
+        "DeletionPolicy": "30",
+        "Engine": "retired",
+        "Forward": "false",
+        "host.instance": "Live",
+        "host.Port": "443",
+        "host.URL": "https://prd.hosted.env2:443",
+        "internal": "N/A",
+        "ip.internal": "200.200.304.11",
+        "sensitive": "false",
+        "token": "f3iuno123578yfbsuyalse"
       },
-      "SampleFullOptions": {
-        "DESCRIPTION_LIST": {
-          "DESCRIPTION": {
-            "ADDRESS": {
-              "KEY": " EXTPROC1",
-              "PROTOCOL": "IPC"
-            },
-            "ADDRESS_LIST": {
-              "ADDRESS": {
-                "null": {
-                  "HOST": "host2",
-                  "PORT": "1521",
-                  "PROTOCOL": "tcp",
-                  "RECV_BUF_SIZE": "11784",
-                  "SEND_BUF_SIZE": "11784"
-                }
-              },
-              "FAILOVER": "on",
-              "LOAD_BALANCE": "off",
-              "SOURCE_ROUTE": "off"
-            }
+      "ToBe": {
+        "core": "war7.2",
+        "env.elasticsearch.port": "1453",
+        "env.elasticsearch.url": "",
+        "version": "7.2"
+      },
+      "TST.host.env1": {
+        "host.instance": "TestEnv2",
+        "host.Port": "445",
+        "host.URL": "https://internal.env1:443",
+        "ip.internal": "200.223.546.787"
+      },
+      "Repo URL": "https://gitlab.com/sweagle/Fill.git",
+      "Scriptpath": "jenkins_fil_3",
+      "Version": "1.1"
+    },
+    "SampleFullOptions": {
+      "DESCRIPTION_LIST": {
+        "DESCRIPTION": {
+          "ADDRESS": {
+            "KEY": " EXTPROC1",
+            "PROTOCOL": "IPC"
           },
-          "SOURCE_ROUTE": "on"
-        }
-      },
-      "versions": {
-        "ConnectionDetails": {
-          "app_pool": "sqlwebadmin_pool",
-          "port": "809833",
-          "site_name": "sqlwebadmin_site"
-        }
-      },
-      "WebClientDetails": {
-        "appDBName": "database1",
-        "appEmail": "ben.riley@google.com",
-        "appEnabled": "yes",
-        "appEoL": "no",
-        "appFirewallIP": "200.10.2.42222",
-        "appName": "WebPortal2",
-        "appPassword": "Password123",
-        "appPort": "8080",
-        "appToken": "ihfs^%Rbfmo",
-        "appURL": "HTTP://localmail.sweagle.com",
-        "appUsername": "Admin",
-        "data.encrypted": "yes",
-        "data.level": "customer",
-        "data.region": "southamerica-west",
-        "DB.Name": "database1",
-        "env..core.server.port": "8090",
-        "env..core.url": "https://localhost",
-        "env.active": "TRUE",
-        "env.core.enabled": "true",
-        "env.core.install.path": "/opt/SWEAGLE",
-        "env.core.logging.file": "/opt/SWEAGLE/logs/sweagl_core.log",
-        "env.core.server.port": "8090",
-        "env.core.tracking.file": "/opt/SWEAGLE/logs/sweagl_core.log",
-        "env.core.url": "https://localhost",
-        "env.dataloader.install.path": "/opt/SWEAGLE",
-        "env.db.host": "MASDB",
-        "env.db.port": "3306",
-        "env.db.schema": "mdm23",
-        "env.db.username": "prd_user",
-        "env.db.userpassword": "Password123",
-        "info.loglevel": "4",
-        "localMail": "",
-        "newport": "93764"
-      },
-      "active": "true",
-      "artifact.buildName": "Infinity_CoreTest",
-      "component.name": "core4",
-      "component.owner.team": "Scrum Boost",
-      "EOL.announced": "False",
-      "EOL.date": ""
-    }
+          "ADDRESS_LIST": {
+            "ADDRESS": {
+              "null": {
+                "HOST": "host2",
+                "PORT": "1521",
+                "PROTOCOL": "tcp",
+                "RECV_BUF_SIZE": "11784",
+                "SEND_BUF_SIZE": "11784"
+              }
+            },
+            "FAILOVER": "on",
+            "LOAD_BALANCE": "off",
+            "SOURCE_ROUTE": "off"
+          }
+        },
+        "SOURCE_ROUTE": "on"
+      }
+    },
+    "versions": {
+      "ConnectionDetails": {
+        "app_pool": "sqlwebadmin_pool",
+        "port": "809833",
+        "site_name": "sqlwebadmin_site"
+      }
+    },
+    "WebClientDetails": {
+      "appDBName": "database1",
+      "appEmail": "ben.riley@google.com",
+      "appEnabled": "yes",
+      "appEoL": "no",
+      "appFirewallIP": "200.10.2.42222",
+      "appName": "WebPortal2",
+      "appPassword": "Password123",
+      "appPort": "8080",
+      "appToken": "ihfs^%Rbfmo",
+      "appURL": "HTTP://localmail.sweagle.com",
+      "appUsername": "Admin",
+      "data.encrypted": "yes",
+      "data.level": "customer",
+      "data.region": "southamerica-west",
+      "DB.Name": "database1",
+      "env..core.server.port": "8090",
+      "env..core.url": "https://localhost",
+      "env.active": "TRUE",
+      "env.core.enabled": "true",
+      "env.core.install.path": "/opt/SWEAGLE",
+      "env.core.logging.file": "/opt/SWEAGLE/logs/sweagl_core.log",
+      "env.core.server.port": "8090",
+      "env.core.tracking.file": "/opt/SWEAGLE/logs/sweagl_core.log",
+      "env.core.url": "https://localhost",
+      "env.dataloader.install.path": "/opt/SWEAGLE",
+      "env.db.host": "MASDB",
+      "env.db.port": "3306",
+      "env.db.schema": "mdm23",
+      "env.db.username": "prd_user",
+      "env.db.userpassword": "Password123",
+      "info.loglevel": "4",
+      "localMail": "",
+      "newport": "93764"
+    },
+    "active": "true",
+    "artifact.buildName": "Infinity_CoreTest",
+    "component.name": "core4",
+    "component.owner.team": "Scrum Boost",
+    "EOL.announced": "False",
+    "EOL.date": ""
   }
 }
