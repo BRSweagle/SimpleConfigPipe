@@ -1,14 +1,14 @@
 {
-  "Client": {
+  "Client_Jenkins": {
     "core": {
       "PRD.host.env1": {
         "data.encrypted": "true",
         "DeletionPolicy": "30",
-        "Engine": "retired",
+        "Engine": "upgraded",
         "Forward": "false",
-        "host.instance": "Live",
+        "host.instance": "TST",
         "host.Port": "443",
-        "host.URL": "https://prd.hosted.env2:443",
+        "host.URL": "https://TST.hosted.env2:443",
         "internal": "N/A",
         "ip.internal": "200.200.304.11",
         "sensitive": "false",
