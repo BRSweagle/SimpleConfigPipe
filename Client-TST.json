@@ -3,9 +3,6 @@
     "core": {
       "PRD.host.env1": {
         "data.encrypted": "true",
-        "DeletionPolicy": "30",
-        "Engine": "upgraded",
-        "Forward": "false",
         "host.instance": "TST",
         "host.Port": "443",
         "host.URL": "https://TST.hosted.env2:443",
