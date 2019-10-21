@@ -67,6 +67,7 @@ git pull'''
     stage('Deploy') {
       steps {
         echo 'Deploy to PRE'
+        SWEAGLESnapshot(actionName: 'Snapshot', mdsName: 'Client-Jenkins', description: 'v1.${BUILD_ID}', tag: 'v1.${BUILD_ID}')
       }
     }
   }
