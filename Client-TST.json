@@ -72,7 +72,7 @@
       "appPassword": "Password123",
       "appPort": "8080",
       "appToken": "ihfs^%Rbfmo",
-      "appURL": "HTTP://localmail.sweagle.com",
+      "appURL": "HTTPS://localmail.sweagle.com",
       "appUsername": "Admin",
       "data.encrypted": "yes",
       "data.level": "customer",
