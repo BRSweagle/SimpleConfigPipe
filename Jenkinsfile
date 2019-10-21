@@ -39,8 +39,7 @@ git pull'''
         stage('MachineLearning') {
           steps {
             echo 'Start ML'
-            sh '''
-curl \'https://testing.sweagle.com/api/v1/data/ml/recognize?downLimit=100\' --data "path=WebApp,Environments" --header "authorization: bearer 783d4f5b-c260-4cce-936e-00d2483875ab" '''
+            echo 'ML - Node Types'
           }
         }
       }
