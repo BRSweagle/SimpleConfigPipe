@@ -65,8 +65,8 @@
     "WebClientDetails": {
       "appDBName": "database5",
       "appEmail": "ben.riley@google.com",
-      "appEnabled": "yes",
-      "appEoL": "no",
+      "appEnabled": "true",
+      "appEoL": "false",
       "appFirewallIP": "200.10.2.42222",
       "appName": "WebPortal2",
       "appPassword": "Password123",
