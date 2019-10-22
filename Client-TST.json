@@ -9,7 +9,7 @@
         "Engine": "upgraded",
         "Forward": "false",
         "host.URL": "https://TST.hosted.env2:443",
-        "internal": "N/A",
+        "internal": "true",
         "ip.internal": "200.200.304.11",
         "sensitive": "false",
         "APIToken": "oUHFUNAI36T4",
