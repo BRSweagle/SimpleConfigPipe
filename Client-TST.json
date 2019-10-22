@@ -12,6 +12,7 @@
         "internal": "N/A",
         "ip.internal": "200.200.304.11",
         "sensitive": "false",
+        "APIToken": "oUHFUNAI36T4",
         "token": "f3iuno123578yfbsuyalse"
       },
       "ToBe": {
@@ -28,7 +29,7 @@
       },
       "Repo URL": "https://gitlab.com/sweagle/Fill.git",
       "Scriptpath": "jenkins_fil_3",
-      "Version": "1.1"
+      "Version": "1.2"
     },
     "SampleFullOptions": {
       "DESCRIPTION_LIST": {
@@ -73,7 +74,7 @@
       "appToken": "ihfs^%Rbfmo",
       "appURL": "https://localmail.sweagle.com",
       "appUsername": "Admin",
-      "data.encrypted": "yes",
+      "data.encrypted": "No",
       "data.level": "customer",
       "data.region": "southamerica-west",
       "DB.Name": "database1",
@@ -88,13 +89,13 @@
       "env.core.url": "https://localhost",
       "env.dataloader.install.path": "/opt/SWEAGLE",
       "env.db.host": "MASDB",
-      "env.db.port": "3306",
+      "env.db.port": "33052",
       "env.db.schema": "mdm23",
       "env.db.username": "prd_user",
       "env.db.userpassword": "Password123",
       "info.loglevel": "4",
       "localMail": "",
-      "newport": "93764"
+      "newport": "9376424"
     },
     "active": "true",
     "artifact.buildName": "Infinity_CoreTest",
