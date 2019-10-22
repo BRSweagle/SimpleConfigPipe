@@ -40,6 +40,7 @@ git pull'''
           steps {
             echo 'Start ML'
             echo 'ML - Node Types'
+            sh '##https://testing.sweagle.com/api/v1/data/ml/recognize?downLimit=100&upLimit=0\' --data "path=WebApp,Environments,filip,data2" --header "authorization: bearer $aToken"'
           }
         }
       }
