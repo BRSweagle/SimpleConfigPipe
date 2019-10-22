@@ -3,15 +3,16 @@
     "core": {
       "PRD.host.env1": {
         "data.encrypted": "true",
-        "host.port": "8080",
+        "host.port": "8090",
         "host.instance": "TST",
-        "DeletionPolicy": "40",
+        "DeletionPolicy": "50",
         "Engine": "upgraded",
         "Forward": "false",
         "host.URL": "https://TST.hosted.env2:443",
         "internal": "true",
         "ip.internal": "200.200.304.11",
         "sensitive": "true",
+        "apitoken": "UYNytaf65",
         "token": "f3iuno123578yfbsuyalse"
       },
       "ToBe": {
@@ -62,12 +63,12 @@
       }
     },
     "WebClientDetails": {
-      "appDBName": "database5",
+      "appDBName": "database8",
       "appEmail": "ben.riley@google.com",
       "appEnabled": "true",
       "appEoL": "false",
       "appFirewallIP": "200.10.2.42222",
-      "appName": "WebPortal2",
+      "appName": "WebPortal3",
       "appPassword": "Password123",
       "appPort": "8080",
       "appToken": "ihfs^%Rbfmo",
