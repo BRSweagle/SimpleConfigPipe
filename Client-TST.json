@@ -5,7 +5,7 @@
         "data.encrypted": "true",
         "host.port": "8080",
         "host.instance": "TST",
-        "DeletionPolicy": "30",
+        "DeletionPolicy": "40",
         "Engine": "upgraded",
         "Forward": "false",
         "host.URL": "https://TST.hosted.env2:443",
