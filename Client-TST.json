@@ -3,8 +3,8 @@
     "core": {
       "PRD.host.env1": {
         "data.encrypted": "true",
+        "host.port": "8080",
         "host.instance": "TST",
-        "host.Port": "443",
         "DeletionPolicy": "30",
         "Engine": "upgraded",
         "Forward": "false",
