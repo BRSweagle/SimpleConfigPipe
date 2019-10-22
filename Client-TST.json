@@ -34,7 +34,6 @@
       "DESCRIPTION_LIST": {
         "DESCRIPTION": {
           "ADDRESS": {
-            "KEY": " EXTPROC1",
             "PROTOCOL": "IPC"
           },
           "ADDRESS_LIST": {
