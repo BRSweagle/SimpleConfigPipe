@@ -4,7 +4,7 @@
       "PRD.host.env1": {
         "data.encrypted": "true",
         "host.port": "8090",
-        "host.instance": "TST",
+        "host.instance": "TST1",
         "DeletionPolicy": "50",
         "Engine": "new",
         "Forward": "false",
