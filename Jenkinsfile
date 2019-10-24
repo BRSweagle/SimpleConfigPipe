@@ -8,19 +8,14 @@ pipeline {
             echo 'Build Start'
           }
         }
-        stage('GetGit') {
-          steps {
-            echo 'ConfigUploaded'
-            sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
-
-git pull
-
-'''
-          }
-        }
         stage('Upload') {
           steps {
             SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'JSON', nodePath: 'WebApp,WebClient', description: 'UploadViaJenkins', showResults: true, markFailed: true, tag: 'v1.${BUILD_ID}')
+          }
+        }
+        stage('Git') {
+          steps {
+            git(url: 'https://github.com/BRSweagle/SimpleConfigPipe', poll: true)
           }
         }
       }
