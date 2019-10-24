@@ -6,7 +6,7 @@
         "host.port": "8090",
         "host.instance": "TST",
         "DeletionPolicy": "50",
-        "Engine": "old",
+        "Engine": "new",
         "Forward": "false",
         "host.URL": "https://TST.hosted.env2:443",
         "internal": "true",
