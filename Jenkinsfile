@@ -18,6 +18,11 @@ pipeline {
             git(url: 'https://github.com/BRSweagle/SimpleConfigPipe', poll: true)
           }
         }
+        stage('') {
+          steps {
+            echo 'Finish'
+          }
+        }
       }
     }
     stage('Test') {
