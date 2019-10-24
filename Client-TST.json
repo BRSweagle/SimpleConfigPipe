@@ -11,9 +11,7 @@
         "host.URL": "https://TST.hosted.env2:443",
         "internal": "true",
         "ip.internal": "200.200.304.11",
-        "sensitive": "true",
-        "apitoken": "UYNytaf65",
-        "token": "f3iuno123578yfbsuyalse"
+        "sensitive": "true"
       },
       "ToBe": {
         "core": "war7.2",
