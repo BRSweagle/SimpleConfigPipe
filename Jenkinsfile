@@ -51,7 +51,7 @@ pipeline {
       parallel {
         stage('Validation') {
           steps {
-            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-Jenkins', showResults: true, retryInterval: 5, markFailed: true)
+            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-Jenkins', showResults: true, retryInterval: 5, markFailed: true, errMax: 5)
           }
         }
         stage('Test Bed Execution') {
