@@ -11,7 +11,7 @@ pipeline {
         stage('GetGit') {
           steps {
             echo 'ConfigUploaded'
-            sh '''/Users/boondock/Documents/GitHub/
+            sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
 
 git pull'''
           }
