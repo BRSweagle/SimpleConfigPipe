@@ -13,7 +13,7 @@ pipeline {
             echo 'ConfigUploaded'
             sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
 
-git pull'''
+touch test1.txt'''
           }
         }
         stage('Upload') {
