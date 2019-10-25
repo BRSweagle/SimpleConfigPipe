@@ -8,17 +8,19 @@ pipeline {
             echo 'Build Start'
           }
         }
-        stage('GetGit') {
-          steps {
-            echo 'ConfigUploaded'
-            sh '''cd /Users/boondock/Documents/GitHub/SimpleConfigPipe
-
-git pull'''
-          }
-        }
         stage('Upload') {
           steps {
-            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'JSON', nodePath: 'WebApp,WebClient', description: 'UploadViaJenkins', showResults: true, markFailed: true, tag: 'v1.${BUILD_ID}')
+            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'JSON', nodePath: 'WebApp,WebClient', description: 'v1.${BUILD_ID}', showResults: true, tag: 'v1.${BUILD_ID}', markFailed: true)
+          }
+        }
+        stage('Git') {
+          steps {
+            git(url: 'https://github.com/BRSweagle/SimpleConfigPipe', poll: true)
+          }
+        }
+        stage('error') {
+          steps {
+            echo 'Finish'
           }
         }
       }
@@ -49,7 +51,7 @@ git pull'''
       parallel {
         stage('Validation') {
           steps {
-            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-Jenkins', showResults: true, retryInterval: 5, markFailed: true)
+            SWEAGLEValidate(actionName: 'ValidateConfig', mdsName: 'Client-Jenkins', showResults: true, retryInterval: 5, markFailed: true, errMax: 5)
           }
         }
         stage('Test Bed Execution') {
