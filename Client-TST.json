@@ -2,7 +2,7 @@
   "Client_Jenkins": {
     "core": {
       "PRD.host.env1": {
-        "data.encrypted": "false",
+        "data.encrypted": "true",
         "host.port": "8090",
         "host.instance": "TST1",
         "DeletionPolicy": "50",
