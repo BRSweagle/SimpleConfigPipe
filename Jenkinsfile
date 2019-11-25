@@ -11,7 +11,7 @@ pipeline {
 
         stage('Upload') {
           steps {
-            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'JSON', nodePath: 'WebApp,WebClient', description: 'v1.${BUILD_ID}', showResults: true, tag: 'v1.${BUILD_ID}', markFailed: true)
+            SWEAGLEUpload(actionName: 'UploadData', fileLocation: '/Users/boondock/Documents/GitHub/SimpleConfigPipe/Client-TST.json', format: 'json', nodePath: 'WebApp,WebClient', description: 'v1.${BUILD_ID}', showResults: true, tag: 'v1.${BUILD_ID}', markFailed: true, filenameNodes: true)
           }
         }
 
